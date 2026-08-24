@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://mainmobile3m"]
+
+[ext_resource type="Script" uid="uid://d3yltn6ajjwhm" path="res://scripts/main_mobile.gd" id="1_main"]
+
+[node name="MainMobile" type="Control" unique_id=1271823618]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_main")
+
+[node name="TopHeader" type="PanelContainer" parent="." unique_id=762477097]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 70.0
+grow_horizontal = 2
+
+[node name="Margin" type="MarginContainer" parent="TopHeader" unique_id=397359511]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 8
+
+[node name="HBox" type="HBoxContainer" parent="TopHeader/Margin" unique_id=993003885]
+layout_mode = 2
+
+[node name="Profile" type="HBoxContainer" parent="TopHeader/Margin/HBox" unique_id=1147626578]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Avatar" type="Label" parent="TopHeader/Margin/HBox/Profile" unique_id=389912665]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "🧢"
+
+[node name="VBox" type="VBoxContainer" parent="TopHeader/Margin/HBox/Profile" unique_id=1306332411]
+layout_mode = 2
+alignment = 1
+
+[node name="Name" type="Label" parent="TopHeader/Margin/HBox/Profile/VBox" unique_id=1659882338]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 14
+text = "Entrenador Red"
+
+[node name="LblLevel" type="Label" parent="TopHeader/Margin/HBox/Profile/VBox" unique_id=1578144995]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.98, 0.8, 0.2, 1)
+theme_override_font_sizes/font_size = 12
+
+[node name="Spacer" type="Control" parent="TopHeader/Margin/HBox" unique_id=981422024]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Resources" type="HBoxContainer" parent="TopHeader/Margin/HBox" unique_id=1223685868]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="LblEnergy" type="Label" parent="TopHeader/Margin/HBox/Resources" unique_id=1419510680]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.8, 1, 1)
+theme_override_font_sizes/font_size = 13
+text = "⚡ 90/100"
+
+[node name="LblGold" type="Label" parent="TopHeader/Margin/HBox/Resources" unique_id=11042570]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.98, 0.85, 0.3, 1)
+theme_override_font_sizes/font_size = 13
+text = "¥ 24,500"
+
+[node name="ScreenContainer" type="Control" parent="." unique_id=187204091]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 67.0
+offset_right = 10.0
+offset_bottom = -63.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BottomNav" type="PanelContainer" parent="." unique_id=1822782931]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -60.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Margin" type="MarginContainer" parent="BottomNav" unique_id=1225947219]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="HBox" type="HBoxContainer" parent="BottomNav/Margin" unique_id=878023997]
+layout_mode = 2
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="BtnParty" type="Button" parent="BottomNav/Margin/HBox" unique_id=742759989]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "🔴 Pokémons"
+
+[node name="BtnBag" type="Button" parent="BottomNav/Margin/HBox" unique_id=114867904]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "🎒 Mochila"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=520722426]
